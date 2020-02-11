@@ -1,0 +1,14 @@
+{
+  "name": "newgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webserver 8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webserver": "^4.0.2"
+  }
+}

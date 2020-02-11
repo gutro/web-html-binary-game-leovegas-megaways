@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Launcher</title>
+
+  <!-- Mobile viewport optimization h5bp.com/ad -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- iOS web app, delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <script>
+    // The script prevents links from opening in mobile safari. https://gist.github.com/1042026
+    (function (a, b, c) { if (c in b && b[c]) { var d, e = a.location, f = /^(a|html)$/i; a.addEventListener("click", function (a) { d = a.target; while (!f.test(d.nodeName)) d = d.parentNode; "href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href) }, !1) } })(document, window.navigator, "standalone")
+  </script>
+
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
+</head>
+
+<body>
+  <h1>Launcher helper</h1>
+  <p>This will redirect you to your game/index.html file with all the launcher settings.</p>
+  <p>If this page does not open a new tab, revise your browser settings and allow it.</p>
+  <p>...or maybe there is a bug here...</p>
+  <p>Change user credentials in the testing-launcher.json file.</p>
+
+  <p>This file is not intended for production, just for testing.</p>
+
+  <script>
+    // GraphQL helpers
+    const headers = {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1; ios-native-app"
+    }
+    const loginWithPasswordRequest = (username, password) => JSON.stringify({
+      query: `mutation LoginWithPasswordMutation( $input: LoginWithPasswordInput! ) {
+          loginWithPassword(input: $input) {
+            viewer {
+              id
+            }
+          }
+        }`,
+      variables: { input: { password: password, username: username } }
+    })
+    const getGameInfoRequest = (gameSlug) => JSON.stringify({
+      query: `{
+          game(slug: "${gameSlug}") {
+            id
+          }
+        }`
+    })
+    const getGameLauncherRequest = (gameId) => JSON.stringify({
+      query: `mutation GameLaunch( $input: GameLaunchInput! ) {
+        gameLaunch(input: $input) {
+          gameLaunch {
+            url
+          }
+        }
+      }`,
+      variables: { input: { id: gameId } }
+    })
+
+    // Helpers
+    const loadLauncherJsonFile = (callback) => {
+      let xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open('GET', '/testing-launcher.json', true);
+
+      xobj.onreadystatechange = () => {
+        const settings = JSON.parse(xobj.responseText)
+        callback(settings)
+      };
+      xobj.send(null);
+    }
+
+    var wasCalledAlready = false
+    const getLauncherUrl = (settings, callback) => {
+      if (wasCalledAlready) { return }
+      wasCalledAlready = true
+      
+      const username = settings.username
+      const password = settings.password
+      const gameSlug = settings.gameSlug
+
+      fetch('https://www.leovegas.com/api?relay', {
+        method: 'POST',
+        headers: headers,
+        body: loginWithPasswordRequest(username, password)
+      })
+        .then(r => r.json())
+        .then(r => {
+          fetch('https://www.leovegas.com/api?relay', {
+            method: 'POST',
+            headers: headers,
+            body: getGameInfoRequest(gameSlug)
+          })
+            .then(r => r.json())
+            .then(r => r.data.game.id)
+            .then(gameId => {
+              fetch('https://www.leovegas.com/api?relay', {
+                method: 'POST',
+                headers: headers,
+                body: getGameLauncherRequest(gameId)
+              })
+                .then(r => r.json())
+                .then(r => r.data.gameLaunch.gameLaunch.url)
+                .then(r => callback(r))
+            })
+        })
+    }
+  </script>
+
+  <script>
+    // EVERYTHING STARTS HERE
+    const init = () => {
+      // Load the launcher.json custom settings
+      console.log('LOG', 'Getting testing settings')
+      loadLauncherJsonFile(settings => {
+        // settings variable contains everything inside "testing-launcher.json". It is used for auth in the example
+        console.log('LOG', JSON.stringify(settings))
+
+        console.log('LOG', 'Getting launcher url')
+        getLauncherUrl(settings, (url) => {
+          console.log('LAUNCHER URL', url)
+          // Redirect to the file you wish. You can pass
+          const urlArguments = new URL(url).search
+          const redirectUrl = `${location.origin}/game/index.html${urlArguments}`.replace(/\{\{LOBBY_URL\}\}/gi, encodeURIComponent('http://closegame'))
+
+          console.log('LOG', 'Redirecting to', redirectUrl)
+          var win = window.open(redirectUrl, '_blank');
+        })
+      });
+    }
+
+    // TADA!
+    init()
+  </script>
+</body>
+
+</html>
