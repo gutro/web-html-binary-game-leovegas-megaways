@@ -1,0 +1,523 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?rlrhyo');
+	src:url('../fonts/icomoon.eot?#iefixrlrhyo') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?rlrhyo') format('woff'),
+		url('../fonts/icomoon.ttf?rlrhyo') format('truetype'),
+		url('../fonts/icomoon.svg?rlrhyo#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;}
+
+/* top bar */
+.icon-arrowdown:before {
+	content: "\e627";
+	float: left;
+	margin-top: 0px;
+	font-size: 1.5em;
+	line-height: 1.7em;
+    color: #fefefe;
+	margin-left: 10px;}
+
+.icon-arrowdown:before {
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg); 
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);}
+	
+.icon-earth:before {
+	content: "\61";	
+	float:left;
+	margin-top:5px;
+	font-size:20px;}
+
+.icon-account:before {
+	content: "\e603";
+	font-size: 1.7em;
+	line-height: 1.1em;
+	color:#fff;
+	cursor:pointer;	
+	display:inline-block;
+	margin-right:0;
+	vertical-align:middle;}	
+
+/* navigation bar */	
+.icon-mainmenu:before {
+	content: "\e601";
+	float: left;
+	margin-top: 0px;
+	font-size: 1.5em;
+	line-height: 1.7em;
+    color: #fefefe;
+	margin-left: 10px;}
+	
+/* dropdown menu */
+/*.icon-home:before {
+	content: "\e610";
+	font-size: 1.5em;
+	line-height: 1.1em;
+	margin: 0 18px 0 0;}*/		
+	
+.icon-bonus:before {
+	content: "\e605";
+	font-size: 1.6em;
+	line-height: 1.2em;
+	margin-right: 18px;}
+	
+.icon-cards:before {
+	content: "\e601";	
+	font-size: 1.6em;
+	line-height: 1em;
+	margin-right: 18px;}	
+	
+.icon-seven:before {
+	content: "\e600";	
+	font-size: 1.6em;
+	line-height: 1em;
+	margin-right: 18px;}
+/*	
+.icon-dices:before {
+	content: "\6a";
+	font-size: 2.1em;
+	line-height: 1.25em;
+	margin-right: 16px;} */
+
+.icon-diamond-2:before {
+	content: "\e602";
+	font-size: 1.6em;
+	line-height: 1em;
+	margin-right: 18px;}
+
+.icon-roulette:before {
+	content: "\e628";
+	font-size: 1.9em;
+	line-height: 1.1em;
+	margin-right: 16px;
+	display: inline-block;}
+
+/* carousel */	
+.right.carousel-control .icon-arrowright:before,
+.left.carousel-control .icon-arrowleft:before {
+	position:absolute;
+	top:33%;
+	font-size:0.8em;
+	line-height:1em;	
+	background-color:rgba(0,0,0,0.5);
+	border-radius:50%;}
+
+.right.carousel-control .icon-arrowright:before {
+	content: "\e622";
+	right:0;
+	left:auto;
+	padding:5px 3px 5px 5px;
+	margin-right:10px;}
+	
+.left.carousel-control .icon-arrowleft:before {
+	content: "\e621";		
+	padding:5px 5px 5px 3px;
+	left:0;
+	right:auto;
+	margin-left:10px;}	
+	
+/* loader icons */
+.icon-clubs:before,
+.icon-diamonds:before,
+.icon-hearts:before,
+.icon-spades:before {
+	font-size: 1.8em;
+	line-height: 1em;
+	color:#fff;
+	cursor:pointer;	
+	display:inline-block;
+	vertical-align:middle;
+	min-width:33px;
+	margin-top:-3px;}
+	
+.icon-clubs:before {
+	content: "\e607";}
+
+.icon-diamonds:before {
+	content: "\e609";}
+
+.icon-hearts:before {
+	content: "\e60e";}
+
+.icon-spades:before {
+	content: "\e61b";}
+	
+/* Other */	
+.feature-image-block .icon-arrowright:before {
+	content: "\e622";
+	font-size: 1.1em;
+	line-height: 1.4em;}
+	
+.feature-image-block.featured .icon-arrowright:before {
+	content: "\e622";
+	font-size: 1.1em;
+	line-height: 1.3em;}	
+	
+.back-button.icon-arrowleft:before {
+	content: "\e621";
+	font-size:1.5em;
+	color:#D7A41E;
+	line-height:1em;}	
+	
+/* games details */
+.icon-prizeinfo:before,
+.icon-crown:before ,
+.icon-maxminbets:before ,
+.icon-betperline:before,
+.game-icons .icon-cards:before,
+.icon-dice:before ,
+.icon-roulette2:before,
+.icon-roulette3:before,
+.icon-freespins:before {
+	font-size: 1.8em;
+	line-height: 1em;
+	color:#fff;
+	cursor:pointer;	
+	display:inline-block;
+	vertical-align:middle;
+	min-width:33px;
+	margin-top:-3px;}
+
+.icon-crown:before {
+	content: "\e608";}	
+
+.icon-maxminbets:before {
+	content: "\e613";}
+
+.icon-betperline:before {
+	content: "\e604";}	
+
+.icon-dice:before {
+	content: "\e624";
+	font-size: 2.2em;}	
+
+.icon-roulette2:before {
+	content: "\e617";
+	font-size: 2em;}	
+
+.icon-roulette3:before {
+	content: "\e618";
+	font-size: 2em;}	
+	
+.gameplay-icons .icon-cards:before {
+	color:#fff;
+	font-size:1.8em;
+	line-height:1.8em;}	
+
+.icon-download:before {
+	content: "\e60a";
+	font-size: 1.6em;
+	color:#fff;}	
+	
+.expand-row-header .icon-arrowdown:before {
+	content: "\e620";
+	font-size: 1.5em;
+	line-height: 0.8em;
+	margin: 0 0 0 5px;
+	text-shadow: 0 1px 3px #000;
+	color:#fff;}		
+
+.icon-freespins:before {
+	content: "\e60d";
+	font-size: 2em;
+	color:#eee;}
+	
+.game-icons .icon-betperline:before,
+.game-icons .icon-cards:before,
+.game-icons .icon-dice:before,
+.game-icons .icon-roulette2:before,
+.game-icons .icon-roulette3:before {
+	margin-top:4px;}	
+
+.game-icons .icon-cards:before {
+	color:#ccc;}	
+	
+.icon-arrowleft:before {
+	content: "\e621";	
+	line-height: 1em;
+	color:#fff;
+	cursor:pointer;	
+	display:inline-block;
+	vertical-align:middle;}
+	
+/* footer */
+.icon-menudown:before {
+	content: "\6c";
+	font-family: 'icomoon';
+	font-size: 1.7em;
+	line-height: 1.3em;
+	color:#fff;
+	cursor:pointer;
+	margin-right:5px;
+	margin-left:0;}
+
+.icon-info:before {
+	content: "\e611";
+	display: inline-block;
+	float: left;
+	font-family: 'icomoon';
+	font-size: 1.9em;
+	line-height: 1em;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 0;}
+
+.icon-responsible-gaming:before{
+	 content: "\e94d";
+	 font-size:16px;
+	 line-height:31px;
+	 padding-right: 10px;
+	 color:#cccccc;
+	 float: left;
+ }
+
+	
+.icon-facebook:before,
+.icon-twitter:before ,
+.icon-youtube:before {
+	display:inline-block;
+	color:#fff;
+	font-size:2.2em;}  	
+	
+.icon-facebook:before {
+	content: "\e60b";
+	margin-right:7px;}
+
+.icon-twitter:before {
+	content: "\e61e";
+	margin-right:10px;}
+
+.icon-youtube:before {
+	content: "\e61f";
+	margin-right:8px;}
+	
+/* common UI */
+.icon-commonUI:before{
+	font-size:16px;
+	line-height:31px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color:#cccccc;
+	float: left;
+	width: 50px;
+}
+
+.icon-home:before {
+	content: "\e927";
+}
+
+.icon-info:before {
+	content: "\e926";
+	font-size:20px;
+}
+
+.icon-sound-on:before {
+	content: "\e93d";
+	font-size:20px;
+}
+
+.icon-sound-off:before {
+	content: "\e94b";
+	font-size:20px;
+}
+
+.icon-settings:before {
+	content: "\e612";	
+	font-size:1.95em;
+	line-height:1.95em;
+	margin-right:0;
+	color:#2d3138;}	
+		
+a.icon-plus:before {
+	content: "\e60f";
+	font-size:1.2em;
+	line-height:1em;
+	margin-right:0;
+	color:#fff;
+	text-shadow: 1px 1px 0 #000;}	
+
+.icon-cross:before {
+	content: "\e606";	
+	font-size:1.7em;
+	line-height:1em;
+	margin-right:0;
+	color:#fff;}		
+	
+/* account */
+.icon-logout:before {
+	content: "\e60c";
+	font-size:1.9em;
+	line-height:1.4em;
+	margin-right:5px;
+	color:#fff;
+	text-shadow: 1px 1px 0 #000;}
+	
+.icon-tick:before {
+	height:25px;
+	width:20px;
+	display:inline-block;
+	vertical-align:middle;
+	content: "\e616";
+	font-size:1.2em;
+	line-height:1em;
+	margin:0 5px 0 7px;	
+	color:#B04E2C;
+	font-family: 'icomoon';}
+	
+.icon-asterisk:before {	
+	height: 21px;
+	width: 11px;
+	content: "\e614";
+	font-size:0.9em;
+	line-height:21px;
+	margin-right:0;
+	color:#eee;}
+
+.account-menu .icon-arrowright:before {
+	content: "\e622";
+	right:0;
+	left:auto;
+	color:#D7A41E;
+	font-size:1.4em;
+	line-height:1em;
+	margin-right:5px;}
+	
+.account-menu li.active .icon-arrowright:before {
+	color:#fff;}	
+
+.fr-icons:before {
+	font-size:16px;
+	line-height:20px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	color:#cccccc;
+	float: none;
+}
+	
+
+
+/* MOBILE LANDSCAPE 550PX+ */	
+@media (min-width: 550px) {
+    
+/* carousel */	
+	.right.carousel-control .icon-arrowright:before, 
+	.left.carousel-control .icon-arrowleft:before {
+		top: 35%;}
+
+	.right.carousel-control .icon-arrowright:before {
+		padding: 10px 8px 10px 10px;}		
+	
+	.left.carousel-control .icon-arrowleft:before {
+	padding: 10px 10px 10px 8px;}			
+		
+/* homepage buttons */		
+	.feature-image-block .icon-arrowright:before {
+		line-height: 1.1em;
+		margin-right: 5px;}		
+		
+}
+
+
+/* MOBILE LANDSCAPE 550PX+ */	
+@media (min-width: 550px) {
+}
+
+
+
+ /* IPAD PORTRAIT */	
+@media (min-width: 768px) {
+	
+	.feature-image-block .icon-arrowright:before {
+		line-height: 0.8em;}
+
+	/* carousel */	
+	.right.carousel-control .icon-arrowright:before,
+	.left.carousel-control .icon-arrowleft:before {
+		font-size:1.5em;	
+		top:36%;}	
+		
+	.right.carousel-control .icon-arrowright:before {
+		margin-right:20px;
+		padding:10px 7px 10px 10px;	}		
+	
+	.left.carousel-control .icon-arrowleft:before {
+		margin-left:20px;
+		padding:10px 10px 10px 7px;	}	
+	
+}	
+	
+ /* IPAD LANDSCAPE */	
+@media (min-width: 992px) {
+	
+	.feature-image-block .icon-arrowright:before {
+		line-height: 1.4em;
+		margin-right: 0;}	
+		
+	/* carousel */	
+	.right.carousel-control .icon-arrowright:before {
+		top:41%;}		
+	
+	.left.carousel-control .icon-arrowleft:before {
+		top:41%;}	
+	
+	.account-menu .icon-arrowright:before {
+		line-height:1.9em;}
+		
+	.icon-tick:before {
+		line-height:1.4em;
+		margin-top:-4px;}
+	
+}
+
+@media (min-width: 1024px) {
+
+    .icon-home:before {
+	    font-size:18px;}
+
+	.icon-responsible-gaming:before{
+		font-size: 21px;
+	}
+
+    .icon-info:before {
+	    font-size:22px;}
+
+    .icon-sound-on:before {
+	    font-size:22px;}
+
+    .icon-sound-off:before {
+	    font-size:22px;}
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+	.icon-responsible-gaming:before{
+		font-size: 16px;
+	}
+
+}
+
+/* spare 
+
+.icon-prizeinfo:before {
+	content: "\e615";}
+
+.icon-arrowup:before {
+	content: "\e623";}
+
+.icon-screen:before {
+	content: "\e629";}
+*/	

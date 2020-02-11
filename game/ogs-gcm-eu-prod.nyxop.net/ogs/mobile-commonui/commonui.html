@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Common UI</title>
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/commonui.css" rel="stylesheet" />
+  <link href="css/font-icons.css" rel="stylesheet" />
+
+  <!-- Bootstrap and jQuery and Common UI JS -->
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+
+  <script src="js/config.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/utils/currencyFormat.js"></script>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57207804-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<body class="commonUI" onload="CUIScreenManager.initPageFunctions(); commonUI.init();">
+  <div id="topBarDiv" class="container" style="display:none">
+    <!--div class="container"-->
+    <div class="row">
+      <!-- visible topbar -->
+      <div class="topbar-header collapse">
+        <!--NORMAL TOP BAR-->
+        <div id="topBarContent" class="topbar-content topbarcontent-width">
+
+          <div class="row hideelement">
+            <div class="col-xs-9">
+
+              <div class="topbar-field-block">
+
+                <div class="row">
+
+                  <div class="col-xs-5">
+                    <div class="topbar-field">
+                      <div class="topbar-field-balance">
+                        <span class="field-title" id="balanceLabel"></span>
+                        <span class="field-amount" id="balance"></span>
+                      </div>
+                      <div class="topbar-field-bonus">
+                        <span class="field-title" id="bonusBalanceLabel" style="display:none;"></span>
+                        <span class="field-amount" id="bonusBalance" style="display:none;"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-4">
+                    <div class="topbar-field">
+                      <span class="field-title" id="stakeLabel"></span>
+                      <span class="field-amount" id="stake"></span>
+                  </div>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <div class="topbar-field">
+                      <span class="field-title" id="paidLabel"></span>
+                      <span class="field-amount" id="paid"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 icon-align">
+              <div class="center-block">
+                <a class="icon-commonUI icon-home" href="#" onclick="CUIScreenManager.returnToLobby();"></a>
+                <a id="settingsSoundOption" class="icon-commonUI icon-sound-on hideelement" href="#" onclick="CUIOptions.toggleMute()"></a>
+                <a id="settingsGameInfoOption" class="icon-commonUI icon-info" href="#" onclick="CUIScreenManager.openGameInfo();"></a>
+                <a id="settingsHelpOption" class="icon-commonUI icon-info" href="#" onclick="CUIOptions.toggleHelp()"></a>
+                <a id="settingResponsibleGaming" class="icon-commonUI icon-responsible-gaming" href="#" onclick="CUIScreenManager.navigateToResponsibleGamingLink()"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END NORMAL TOP BAR-->
+        <!--FREE ROUNDS TOP BAR-->
+        <div id="fr-topBarContent" class="fr-topbar-content" style="display: none">
+          <div class="row">
+            <div class="col-xs-9 fr-text-align">
+
+              <div class="fr-topbar-field-block">
+
+                <div class="row">
+
+                  <div class="col-xs-6">
+                    <div class="fr-topbar-field">
+                      <span class="fr-label" id="frRemainingLabel"></span>
+                      <span class="fr-label fr-value-text" id="frRemaining"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <div class="fr-topbar-field">
+                      <span class="fr-label" id="frWinningsLabel"></span>
+                      <span class="fr-label fr-value-text" id="frWinnings"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="fr-iconbox fr-ib-blue">
+                <a class="icon-home fr-icons" href="#" onclick="CUIScreenManager.returnToLobby();"></a>
+              </div>
+              <div id="fr-settingSoundOptionBG" class="fr-iconbox fr-ib-blue">
+                <a id="fr-settingsSoundOption" class="icon-sound-on fr-icons" href="#" href="#" onclick="CUIOptions.toggleMute()"></a>
+              </div>
+              <div id="fr-settingsGameInfoOption" class="fr-iconbox fr-ib-blue">
+                <a class="icon-info fr-icons" href="#" onclick="CUIScreenManager.openGameInfo();"></a>
+              </div>
+              <div id="fr-settingsHelpOption" class="fr-iconbox fr-ib-blue" >
+                <a class="icon-info fr-icons" href="#" onclick="CUIOptions.toggleHelp()"></a>
+              </div>
+              <div id="fr-settingResponsibleGaming" class="fr-iconbox fr-ib-blue">
+                <a class="icon-responsible-gaming fr-icons" href="#" onclick="CUIScreenManager.navigateToResponsibleGamingLink()"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END FREE ROUNDS TOP BAR-->
+
+      </div>
+    </div>
+  </div>
+  <div id="gamesparkContainer" style="width:100%"></div>
+  <!-- end visible topbar -->
+
+  <!-- dialog box container -->
+  <div id="dialogBoxContainer"></div>
+  </div>
+
+  <!-- Topbar Tab collapsed -->
+<div id="tab" style="display:none" class="tab-height">
+    <div id="top-tab" class="topbar-tab">
+      <button class="c-hamburger c-hamburger--htla">
+		  <span></span>
+		</button>
+      <p class="tab-time"></p>
+      <div id="fr-container" class="fr-container">
+        <div class="fr-tab-rounds" id="fr-tab-rounds"><span id="fr-remaining-rounds"></span></div>
+      </div>
+      <div class="fr-tab-currency" id="fr-tab-currency">
+        <div id="fr-tab-currency-code" class="fr-tab-currency-code"></div>
+        <div id="fr-tab-text" class="fr-tab-text"></div>
+      </div>
+    </div>
+    <br style="clear:both" />
+  </div>
+</div>
+
+  <!-- loading screen -->
+  <div id="loadingDisplayDiv" class="container gameload">
+    <div class="row">
+      <div class="gameload-block">
+        <div class="large-logo">
+          <!--          <img src="imgs/openbet_games.png" alt="OpenBet Logo" /> -->
+        </div>
+        <div id="loadingScreenGameName" class="game-name"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+		function getUrlParam(name) {
+			if (name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
+				return decodeURIComponent(name[1]);
+		}
+
+		if ('v4' == getUrlParam('gcmVersion')) {
+		    var gcmUrl = "../gcm-adapter-commonui/gcmAdapter.min.js";
+		} else {
+		    var gcmUrl = "../gcm/js/gcm.js";
+		}
+
+        // Load gcmConfig.js first, then gcmAdapter.min.js/gcm.js and finally commonui.js
+        var gcmConfigScript = document.createElement('script');
+        gcmConfigScript.src = "config/gcmConfig.js";
+        gcmConfigScript.type = 'text/javascript';
+        gcmConfigScript.async = false;
+        gcmConfigScript.onload = function() {
+            var cuiScript = document.createElement('script');
+            cuiScript.src = "js/dist/commonui.min.js";
+            cuiScript.type = 'text/javascript';
+            cuiScript.async = false;
+            cuiScript.onload = function() {
+                var gcmScript = document.createElement('script');
+                gcmScript.src = gcmUrl;
+                gcmScript.type = 'text/javascript';
+                gcmScript.async = false;
+                document.head.appendChild(gcmScript);
+            };
+            document.head.appendChild(cuiScript);
+        };
+        document.head.appendChild(gcmConfigScript);
+	</script>
+  </body>
+</html>

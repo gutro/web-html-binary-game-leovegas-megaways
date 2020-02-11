@@ -1,0 +1,418 @@
+{
+"skeleton": { "hash": "iRrDLupF8k/UGg9ALiNVDrXWoak", "spine": "3.7.91", "width": 6000, "height": 3380, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root", "x": 960, "y": -540 },
+	{ "name": "fireworks1_a", "parent": "root", "x": -960, "y": 540 },
+	{ "name": "fireworks2", "parent": "root", "x": -960, "y": 540 },
+	{ "name": "fireworks1_b", "parent": "root", "x": -960, "y": 540 },
+	{ "name": "fireworks1_c", "parent": "root", "x": -960, "y": 540 },
+	{ "name": "firework_flare", "parent": "root", "x": -960, "y": 540 }
+],
+"slots": [
+	{ "name": "fireworks1_a", "bone": "fireworks1_a", "attachment": "fireworks1/fireworks1_00000.jpg", "blend": "additive" },
+	{ "name": "fireworks1_b", "bone": "fireworks1_b", "attachment": "fireworks1/fireworks1_00000.jpg", "blend": "additive" },
+	{ "name": "fireworks1_c", "bone": "fireworks1_c", "attachment": "fireworks1/fireworks1_00000.jpg", "blend": "additive" },
+	{ "name": "fireworks2", "bone": "fireworks2", "attachment": "fireworks2/fireworks2_00000.jpg", "blend": "additive" },
+	{ "name": "big_win_flare", "bone": "firework_flare", "attachment": "big_win_flare.jpg", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"big_win_flare": {
+			"big_win_flare.jpg": { "width": 894, "height": 894 }
+		},
+		"fireworks1_a": {
+			"fireworks1/fireworks1_00000.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00001.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00002.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00003.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00004.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00005.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00006.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00007.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00008.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00009.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00010.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00011.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00012.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00013.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00014.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00015.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00016.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00017.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00018.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00019.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00020.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00021.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00022.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00023.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00024.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00025.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00026.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00027.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00028.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00029.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00030.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00031.jpg": { "y": 0.5, "width": 540, "height": 263 }
+		},
+		"fireworks1_b": {
+			"fireworks1/fireworks1_00000.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00001.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00002.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00003.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00004.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00005.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00006.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00007.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00008.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00009.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00010.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00011.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00012.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00013.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00014.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00015.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00016.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00017.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00018.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00019.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00020.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00021.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00022.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00023.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00024.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00025.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00026.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00027.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00028.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00029.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00030.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00031.jpg": { "y": 0.5, "width": 540, "height": 263 }
+		},
+		"fireworks1_c": {
+			"fireworks1/fireworks1_00000.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00001.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00002.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00003.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00004.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00005.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00006.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00007.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00008.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00009.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00010.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00011.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00012.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00013.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00014.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00015.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00016.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00017.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00018.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00019.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00020.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00021.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00022.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00023.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00024.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00025.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00026.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00027.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00028.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00029.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00030.jpg": { "y": 0.5, "width": 540, "height": 263 },
+			"fireworks1/fireworks1_00031.jpg": { "y": 0.5, "width": 540, "height": 263 }
+		},
+		"fireworks2": {
+			"fireworks2/fireworks2_00000.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00001.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00002.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00003.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00004.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00005.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00006.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00007.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00008.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00009.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00010.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00011.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00012.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00013.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00014.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00015.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00016.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00017.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00018.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00019.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00020.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00021.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00022.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00023.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00024.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00025.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00026.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00027.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00028.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00029.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00030.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00031.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00032.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00033.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00034.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00035.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00036.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00037.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00038.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00039.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00040.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00041.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00042.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00043.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00044.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00045.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00046.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00047.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00048.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00049.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00050.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00051.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00052.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00053.jpg": { "y": 0.5, "width": 600, "height": 338 },
+			"fireworks2/fireworks2_00054.jpg": { "y": 0.5, "width": 600, "height": 338 }
+		}
+	}
+},
+"animations": {
+	"firework1": {
+		"slots": {
+			"big_win_flare": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1667,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.0667,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "color": "ffffff00" }
+				]
+			},
+			"fireworks1_a": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "fireworks1/fireworks1_00000.jpg" },
+					{ "time": 0.0667, "name": "fireworks1/fireworks1_00001.jpg" },
+					{ "time": 0.1333, "name": "fireworks1/fireworks1_00002.jpg" },
+					{ "time": 0.2, "name": "fireworks1/fireworks1_00003.jpg" },
+					{ "time": 0.2667, "name": "fireworks1/fireworks1_00004.jpg" },
+					{ "time": 0.3333, "name": "fireworks1/fireworks1_00005.jpg" },
+					{ "time": 0.4, "name": "fireworks1/fireworks1_00006.jpg" },
+					{ "time": 0.4667, "name": "fireworks1/fireworks1_00007.jpg" },
+					{ "time": 0.5333, "name": "fireworks1/fireworks1_00008.jpg" },
+					{ "time": 0.6, "name": "fireworks1/fireworks1_00009.jpg" },
+					{ "time": 0.6667, "name": "fireworks1/fireworks1_00010.jpg" },
+					{ "time": 0.7333, "name": "fireworks1/fireworks1_00011.jpg" },
+					{ "time": 0.8, "name": "fireworks1/fireworks1_00012.jpg" },
+					{ "time": 0.8667, "name": "fireworks1/fireworks1_00013.jpg" },
+					{ "time": 0.9333, "name": "fireworks1/fireworks1_00014.jpg" },
+					{ "time": 1, "name": "fireworks1/fireworks1_00015.jpg" },
+					{ "time": 1.0667, "name": "fireworks1/fireworks1_00016.jpg" },
+					{ "time": 1.1333, "name": "fireworks1/fireworks1_00017.jpg" },
+					{ "time": 1.2, "name": "fireworks1/fireworks1_00018.jpg" },
+					{ "time": 1.2667, "name": "fireworks1/fireworks1_00019.jpg" },
+					{ "time": 1.3333, "name": "fireworks1/fireworks1_00020.jpg" },
+					{ "time": 1.4, "name": "fireworks1/fireworks1_00021.jpg" },
+					{ "time": 1.4667, "name": "fireworks1/fireworks1_00022.jpg" },
+					{ "time": 1.5333, "name": "fireworks1/fireworks1_00023.jpg" },
+					{ "time": 1.6, "name": "fireworks1/fireworks1_00024.jpg" },
+					{ "time": 1.6667, "name": "fireworks1/fireworks1_00025.jpg" },
+					{ "time": 1.7333, "name": "fireworks1/fireworks1_00026.jpg" },
+					{ "time": 1.8, "name": "fireworks1/fireworks1_00027.jpg" },
+					{ "time": 1.8667, "name": "fireworks1/fireworks1_00028.jpg" },
+					{ "time": 1.9333, "name": "fireworks1/fireworks1_00029.jpg" },
+					{ "time": 2, "name": "fireworks1/fireworks1_00030.jpg" },
+					{ "time": 2.0667, "name": "fireworks1/fireworks1_00031.jpg" }
+				]
+			},
+			"fireworks1_b": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1, "name": "fireworks1/fireworks1_00000.jpg" },
+					{ "time": 1.0667, "name": "fireworks1/fireworks1_00001.jpg" },
+					{ "time": 1.1333, "name": "fireworks1/fireworks1_00002.jpg" },
+					{ "time": 1.2, "name": "fireworks1/fireworks1_00003.jpg" },
+					{ "time": 1.2667, "name": "fireworks1/fireworks1_00004.jpg" },
+					{ "time": 1.3333, "name": "fireworks1/fireworks1_00005.jpg" },
+					{ "time": 1.4, "name": "fireworks1/fireworks1_00006.jpg" },
+					{ "time": 1.4667, "name": "fireworks1/fireworks1_00007.jpg" },
+					{ "time": 1.5333, "name": "fireworks1/fireworks1_00008.jpg" },
+					{ "time": 1.6, "name": "fireworks1/fireworks1_00009.jpg" },
+					{ "time": 1.6667, "name": "fireworks1/fireworks1_00010.jpg" },
+					{ "time": 1.7333, "name": "fireworks1/fireworks1_00011.jpg" },
+					{ "time": 1.8, "name": "fireworks1/fireworks1_00012.jpg" },
+					{ "time": 1.8667, "name": "fireworks1/fireworks1_00013.jpg" },
+					{ "time": 1.9333, "name": "fireworks1/fireworks1_00014.jpg" },
+					{ "time": 2, "name": "fireworks1/fireworks1_00015.jpg" }
+				]
+			},
+			"fireworks1_c": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.0667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "fireworks1/fireworks1_00015.jpg" },
+					{ "time": 0.0667, "name": "fireworks1/fireworks1_00016.jpg" },
+					{ "time": 0.1333, "name": "fireworks1/fireworks1_00017.jpg" },
+					{ "time": 0.2, "name": "fireworks1/fireworks1_00018.jpg" },
+					{ "time": 0.2667, "name": "fireworks1/fireworks1_00019.jpg" },
+					{ "time": 0.3333, "name": "fireworks1/fireworks1_00020.jpg" },
+					{ "time": 0.4, "name": "fireworks1/fireworks1_00021.jpg" },
+					{ "time": 0.4667, "name": "fireworks1/fireworks1_00022.jpg" },
+					{ "time": 0.5333, "name": "fireworks1/fireworks1_00023.jpg" },
+					{ "time": 0.6, "name": "fireworks1/fireworks1_00024.jpg" },
+					{ "time": 0.6667, "name": "fireworks1/fireworks1_00025.jpg" },
+					{ "time": 0.7333, "name": "fireworks1/fireworks1_00026.jpg" },
+					{ "time": 0.8, "name": "fireworks1/fireworks1_00027.jpg" },
+					{ "time": 0.8667, "name": "fireworks1/fireworks1_00028.jpg" },
+					{ "time": 0.9333, "name": "fireworks1/fireworks1_00029.jpg" },
+					{ "time": 1, "name": "fireworks1/fireworks1_00030.jpg" },
+					{ "time": 1.0667, "name": "fireworks1/fireworks1_00031.jpg" }
+				]
+			},
+			"fireworks2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "fireworks2/fireworks2_00000.jpg" },
+					{ "time": 0.0333, "name": "fireworks2/fireworks2_00001.jpg" },
+					{ "time": 0.0667, "name": "fireworks2/fireworks2_00002.jpg" },
+					{ "time": 0.1, "name": "fireworks2/fireworks2_00003.jpg" },
+					{ "time": 0.1333, "name": "fireworks2/fireworks2_00004.jpg" },
+					{ "time": 0.1667, "name": "fireworks2/fireworks2_00005.jpg" },
+					{ "time": 0.2, "name": "fireworks2/fireworks2_00006.jpg" },
+					{ "time": 0.2333, "name": "fireworks2/fireworks2_00007.jpg" },
+					{ "time": 0.2667, "name": "fireworks2/fireworks2_00008.jpg" },
+					{ "time": 0.3, "name": "fireworks2/fireworks2_00009.jpg" },
+					{ "time": 0.3333, "name": "fireworks2/fireworks2_00010.jpg" },
+					{ "time": 0.3667, "name": "fireworks2/fireworks2_00011.jpg" },
+					{ "time": 0.4, "name": "fireworks2/fireworks2_00012.jpg" },
+					{ "time": 0.4333, "name": "fireworks2/fireworks2_00013.jpg" },
+					{ "time": 0.4667, "name": "fireworks2/fireworks2_00014.jpg" },
+					{ "time": 0.5, "name": "fireworks2/fireworks2_00015.jpg" },
+					{ "time": 0.5333, "name": "fireworks2/fireworks2_00016.jpg" },
+					{ "time": 0.5667, "name": "fireworks2/fireworks2_00017.jpg" },
+					{ "time": 0.6, "name": "fireworks2/fireworks2_00018.jpg" },
+					{ "time": 0.6333, "name": "fireworks2/fireworks2_00019.jpg" },
+					{ "time": 0.6667, "name": "fireworks2/fireworks2_00020.jpg" },
+					{ "time": 0.7, "name": "fireworks2/fireworks2_00021.jpg" },
+					{ "time": 0.7333, "name": "fireworks2/fireworks2_00022.jpg" },
+					{ "time": 0.7667, "name": "fireworks2/fireworks2_00023.jpg" },
+					{ "time": 0.8, "name": "fireworks2/fireworks2_00024.jpg" },
+					{ "time": 0.8333, "name": "fireworks2/fireworks2_00025.jpg" },
+					{ "time": 0.8667, "name": "fireworks2/fireworks2_00026.jpg" },
+					{ "time": 0.9, "name": "fireworks2/fireworks2_00027.jpg" },
+					{ "time": 0.9333, "name": "fireworks2/fireworks2_00028.jpg" },
+					{ "time": 0.9667, "name": "fireworks2/fireworks2_00029.jpg" },
+					{ "time": 1, "name": "fireworks2/fireworks2_00030.jpg" },
+					{ "time": 1.0333, "name": "fireworks2/fireworks2_00031.jpg" },
+					{ "time": 1.0667, "name": "fireworks2/fireworks2_00032.jpg" },
+					{ "time": 1.1, "name": "fireworks2/fireworks2_00033.jpg" },
+					{ "time": 1.1333, "name": "fireworks2/fireworks2_00034.jpg" },
+					{ "time": 1.1667, "name": "fireworks2/fireworks2_00035.jpg" },
+					{ "time": 1.2, "name": "fireworks2/fireworks2_00036.jpg" },
+					{ "time": 1.2333, "name": "fireworks2/fireworks2_00037.jpg" },
+					{ "time": 1.2667, "name": "fireworks2/fireworks2_00038.jpg" },
+					{ "time": 1.3, "name": "fireworks2/fireworks2_00039.jpg" },
+					{ "time": 1.3333, "name": "fireworks2/fireworks2_00040.jpg" },
+					{ "time": 1.3667, "name": "fireworks2/fireworks2_00041.jpg" },
+					{ "time": 1.4, "name": "fireworks2/fireworks2_00042.jpg" },
+					{ "time": 1.4333, "name": "fireworks2/fireworks2_00043.jpg" },
+					{ "time": 1.4667, "name": "fireworks2/fireworks2_00044.jpg" },
+					{ "time": 1.5, "name": "fireworks2/fireworks2_00045.jpg" },
+					{ "time": 1.5333, "name": "fireworks2/fireworks2_00046.jpg" },
+					{ "time": 1.5667, "name": "fireworks2/fireworks2_00047.jpg" },
+					{ "time": 1.6, "name": "fireworks2/fireworks2_00048.jpg" },
+					{ "time": 1.6333, "name": "fireworks2/fireworks2_00049.jpg" },
+					{ "time": 1.6667, "name": "fireworks2/fireworks2_00050.jpg" },
+					{ "time": 1.7, "name": "fireworks2/fireworks2_00051.jpg" },
+					{ "time": 1.7333, "name": "fireworks2/fireworks2_00052.jpg" },
+					{ "time": 1.7667, "name": "fireworks2/fireworks2_00053.jpg" },
+					{ "time": 1.8, "name": "fireworks2/fireworks2_00054.jpg" }
+				]
+			}
+		},
+		"bones": {
+			"fireworks1_a": {
+				"translate": [
+					{ "time": 0, "x": 918.88, "y": -519.36 }
+				],
+				"scale": [
+					{ "time": 0, "x": 4, "y": 4 }
+				]
+			},
+			"fireworks2": {
+				"translate": [
+					{ "time": 0, "x": 960, "y": -480.41 }
+				],
+				"scale": [
+					{ "time": 0, "x": 10, "y": 10 }
+				]
+			},
+			"fireworks1_b": {
+				"translate": [
+					{ "time": 0, "x": 918.88, "y": -519.36 }
+				],
+				"scale": [
+					{ "time": 0, "x": 4, "y": 4 }
+				]
+			},
+			"fireworks1_c": {
+				"translate": [
+					{ "time": 0, "x": 918.88, "y": -519.36 }
+				],
+				"scale": [
+					{ "time": 0, "x": 4, "y": 4 }
+				]
+			},
+			"firework_flare": {
+				"translate": [
+					{ "time": 0, "x": 960, "y": -529.17 }
+				],
+				"scale": [
+					{ "time": 0, "x": 3, "y": 3 }
+				]
+			}
+		}
+	}
+}
+}

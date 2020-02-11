@@ -1,0 +1,166 @@
+{
+"skeleton": { "hash": "d8OIV6liRL8tObK2kgleJ+TA/GE", "spine": "3.7.91", "width": 852, "height": 798, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "transition_lion", "parent": "root", "x": 960, "y": -540 },
+	{ "name": "transition_bg1", "parent": "root", "x": 960, "y": -540 },
+	{ "name": "transition_bg2", "parent": "root", "x": 960, "y": -540 },
+	{ "name": "transition_fill", "parent": "root", "x": 960, "y": -540 }
+],
+"slots": [
+	{ "name": "transition_fill", "bone": "transition_fill", "attachment": "transition_fill.jpg" },
+	{ "name": "transition_bg1", "bone": "transition_bg1", "attachment": "transition_bg1.jpg", "blend": "additive" },
+	{ "name": "transition_bg2", "bone": "transition_bg2", "attachment": "transition_bg1.jpg", "blend": "additive" },
+	{ "name": "transition_lion", "bone": "transition_lion", "attachment": "transition_lion.jpg", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"transition_bg1": {
+			"transition_bg1.jpg": { "width": 852, "height": 480 }
+		},
+		"transition_bg2": {
+			"transition_bg1.jpg": { "width": 852, "height": 480 }
+		},
+		"transition_fill": {
+			"transition_fill.jpg": { "width": 480, "height": 270 }
+		},
+		"transition_lion": {
+			"transition_lion.jpg": { "width": 798, "height": 798 }
+		}
+	}
+},
+"events": {
+	"swap_screen": {}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"transition_bg1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.2667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8333, "color": "ffffff00" }
+				]
+			},
+			"transition_bg2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.2667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8333, "color": "ffffff00" }
+				]
+			},
+			"transition_fill": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1.3333,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8333, "color": "ffffff00" }
+				]
+			},
+			"transition_lion": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 1.6,
+						"color": "ffffffff",
+						"curve": [ 0.372, 0.62, 0.711, 1 ]
+					},
+					{ "time": 1.8333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"transition_bg1": {
+				"scale": [
+					{ "time": 0, "x": 2.27, "y": 2.273, "curve": "stepped" },
+					{
+						"time": 0.2667,
+						"x": 2.27,
+						"y": 2.273,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6,
+						"x": 2.4,
+						"y": 2.4,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8333, "x": 2.77, "y": 3.087 }
+				]
+			},
+			"transition_lion": {
+				"translate": [
+					{ "time": 1.6, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 4, "y": 4 },
+					{ "time": 0.3333, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 1.6,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8333, "x": 0.5, "y": 0.5 }
+				]
+			},
+			"transition_bg2": {
+				"rotate": [
+					{ "time": 0, "angle": 90 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.449, "y": 4.303, "curve": "stepped" },
+					{
+						"time": 0.2667,
+						"x": 1.449,
+						"y": 4.303,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6,
+						"x": 2.406,
+						"y": 4.303,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8333, "x": 3.359, "y": 4.208 }
+				]
+			},
+			"transition_fill": {
+				"scale": [
+					{ "time": 0, "x": 4, "y": 4 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 1.6, "name": "swap_screen" }
+		]
+	}
+}
+}

@@ -1,0 +1,578 @@
+{
+"skeleton": { "hash": "/HPsp2Nu3Ci1aS04p3oU5qRUYr8", "spine": "3.7.91", "width": 2455, "height": 1009, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "ticket_bottom_light_shafts", "parent": "root", "x": 960, "y": -540 },
+	{ "name": "megaways_bet", "parent": "root", "x": 678, "y": -631.5 },
+	{ "name": "bonuswheel_bet", "parent": "root", "x": 1238.5, "y": -564.5 },
+	{ "name": "leobet_cancel", "parent": "root", "x": 960.5, "y": -909.5 },
+	{ "name": "ticket_effect1", "parent": "root", "x": -519, "y": -457 },
+	{ "name": "bonuswheel_bet_textbox", "parent": "bonuswheel_bet", "x": -1238.5, "y": 564.5 },
+	{ "name": "megaways_bet_textbox", "parent": "megaways_bet", "x": -678, "y": 631.5 }
+],
+"slots": [
+	{ "name": "ticket_bottom_light_shafts", "bone": "ticket_bottom_light_shafts", "attachment": "ticket_bottom_light_shafts.jpg", "blend": "additive" },
+	{ "name": "megaways_bet", "bone": "megaways_bet", "attachment": "megaways_bet_ml" },
+	{ "name": "bonuswheel_bet", "bone": "bonuswheel_bet", "attachment": "bonuswheel_bet_ml" },
+	{ "name": "ticket_border_glow1", "bone": "megaways_bet", "attachment": "ticket_border_glow", "blend": "additive" },
+	{ "name": "ticket_border_glow2", "bone": "bonuswheel_bet", "attachment": "ticket_border_glow", "blend": "additive" },
+	{ "name": "leobet_cancel", "bone": "leobet_cancel", "attachment": "leobet_cancel" },
+	{ "name": "texbox", "bone": "bonuswheel_bet_textbox" },
+	{ "name": "texbox2", "bone": "megaways_bet_textbox" },
+	{ "name": "ticket_full_glow1", "bone": "megaways_bet", "attachment": "ticket_full_glow", "blend": "additive" },
+	{ "name": "ticket_full_glow2", "bone": "bonuswheel_bet", "attachment": "ticket_full_glow", "blend": "additive" },
+	{ "name": "ticket_effect1", "bone": "ticket_effect1", "attachment": "ticket_effect1.jpg", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"bonuswheel_bet": {
+			"bonuswheel_bet_ml": { "width": 389, "height": 511 }
+		},
+		"leobet_cancel": {
+			"leobet_cancel": { "width": 193, "height": 113 }
+		},
+		"megaways_bet": {
+			"megaways_bet_ml": { "x": 0.5, "y": 67, "width": 389, "height": 511 }
+		},
+		"ticket_border_glow1": {
+			"ticket_border_glow": { "x": 0.87, "y": 70, "width": 527, "height": 645 }
+		},
+		"ticket_border_glow2": {
+			"ticket_border_glow": { "y": 3, "width": 527, "height": 645 }
+		},
+		"ticket_bottom_light_shafts": {
+			"ticket_bottom_light_shafts.jpg": { "width": 960, "height": 540 }
+		},
+		"ticket_effect1": {
+			"ticket_effect1.jpg": { "width": 868, "height": 868 }
+		},
+		"ticket_full_glow1": {
+			"ticket_full_glow": { "x": 1, "y": 69.5, "width": 527, "height": 645 }
+		},
+		"ticket_full_glow2": {
+			"ticket_full_glow": { "x": -0.1, "y": 2.5, "width": 527, "height": 645 }
+		}
+	}
+},
+"animations": {
+	"leobet_bonus_picked": {
+		"slots": {
+			"bonuswheel_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"leobet_cancel": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"megaways_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"texbox": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"texbox2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"ticket_border_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"ticket_border_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.244, 0, 0.641, 0.57 ]
+					},
+					{ "time": 0.1667, "color": "ffffff00" }
+				]
+			},
+			"ticket_bottom_light_shafts": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"ticket_effect1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"ticket_bottom_light_shafts": {
+				"scale": [
+					{ "time": 0, "x": 2, "y": 2 }
+				]
+			},
+			"bonuswheel_bet": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1,
+						"x": 0.95,
+						"y": 0.95,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"megaways_bet": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"bonuswheel_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 1238.32, "y": -612.18 }
+				]
+			},
+			"megaways_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 679.84, "y": -612.18 }
+				]
+			}
+		}
+	},
+	"leobet_intro": {
+		"slots": {
+			"bonuswheel_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"leobet_cancel": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.5,
+						"color": "ffffff00",
+						"curve": [ 0.375, 0.5, 0.75, 1 ]
+					},
+					{ "time": 1, "color": "ffffffff" }
+				]
+			},
+			"megaways_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"texbox": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"texbox2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"ticket_border_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"ticket_border_glow2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.382, 0.56, 0.74, 1 ]
+					},
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"ticket_bottom_light_shafts": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"ticket_effect1": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 0.6667,
+						"color": "ffffffff",
+						"curve": [ 0.374, 0.62, 0.715, 1 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.351, 0.4, 0.757, 1 ]
+					},
+					{
+						"time": 0.2667,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.2667,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"ticket_bottom_light_shafts": {
+				"scale": [
+					{ "time": 0, "x": 2, "y": 2 }
+				]
+			},
+			"ticket_effect1": {
+				"translate": [
+					{ "time": 0, "x": 1477.63, "y": -95.9 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3,
+						"x": 2,
+						"y": 2,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 2.2, "y": 2.2 }
+				]
+			},
+			"bonuswheel_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 1238.32, "y": -612.18 }
+				]
+			},
+			"megaways_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 679.84, "y": -612.18 }
+				]
+			}
+		}
+	},
+	"leobet_loop": {
+		"slots": {
+			"bonuswheel_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"leobet_cancel": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"megaways_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"texbox": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"texbox2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"ticket_border_glow1": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"color": "ffffff78",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"ticket_border_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.244, 0, 0.641, 0.57 ]
+					},
+					{
+						"time": 0.3333,
+						"color": "ffffff78",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"ticket_bottom_light_shafts": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"ticket_effect1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"ticket_bottom_light_shafts": {
+				"scale": [
+					{ "time": 0, "x": 2, "y": 2 }
+				]
+			},
+			"bonuswheel_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 1238.32, "y": -612.18 }
+				]
+			},
+			"megaways_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 679.84, "y": -612.18 }
+				]
+			}
+		}
+	},
+	"leobet_megaways_picked": {
+		"slots": {
+			"bonuswheel_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"leobet_cancel": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"megaways_bet": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"texbox": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"texbox2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"ticket_border_glow1": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"ticket_border_glow2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"ticket_bottom_light_shafts": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"ticket_effect1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow1": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.265, 0, 0.618, 0.43 ]
+					},
+					{
+						"time": 0.1,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"ticket_full_glow2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"ticket_bottom_light_shafts": {
+				"scale": [
+					{ "time": 0, "x": 2, "y": 2 }
+				]
+			},
+			"bonuswheel_bet": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"leobet_cancel": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"megaways_bet": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1,
+						"x": 0.95,
+						"y": 0.95,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"megaways_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 679.84, "y": -612.18 }
+				]
+			},
+			"bonuswheel_bet_textbox": {
+				"translate": [
+					{ "time": 0, "x": 1238.32, "y": -612.18 }
+				]
+			}
+		}
+	}
+}
+}

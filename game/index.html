@@ -25,13 +25,52 @@
 </head>
 
 <body>
-  <!-- Decide here how to launch the game -->
-
   <script>
-    // const urlArguments = window.location.search.substr(1)
-    // document.location.href = `/path/to/the/game/index.html?${urlArguments}` <==== Possible way
+    function loadSwiftConfig() {
+      const getSearchParameters = () => {
+        var prmstr = window.location.search.substr(1);
+        return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+      }
+
+      const transformToAssocArray = (prmstr) => {
+        var params = {};
+        var prmarr = prmstr.split("&");
+        for (var i = 0; i < prmarr.length; i++) {
+          var tmparr = prmarr[i].split("=");
+          params[tmparr[0]] = tmparr[1];
+        }
+        return params;
+      }
+
+      var params = getSearchParameters();
+
+      Object.entries(params).forEach(([k, v]) => localStorage.setItem(k, v))
+    }
+
+    const loadLocalConfig = (callback) => {
+      let xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open('GET', '/game/local-config.json', true);
+
+      xobj.onreadystatechange = () => {
+        const response = JSON.parse(xobj.responseText)
+        Object.entries(response).forEach(([k, v]) => localStorage.setItem(k, v))
+        callback()
+      };
+      xobj.send(null);
+    }
+
+    const init = () => {
+      loadSwiftConfig()
+
+      loadLocalConfig(_ => {
+        // Start game
+        document.location.href = `/game/content.blueprintgaming.com/Games/BP_LeoVegasMegaways/1.0.0.9-FgWQ/index.html?${window.location.search.substr(1)}`
+      });
+    }
+
+    init()
   </script>
-  
 </body>
 
 </html>

@@ -1,0 +1,18 @@
+{
+  "WAY": "WAY",
+  "WAYS": "WAYS",
+  "BONUS_COMPLETE": "BONUS COMPLETE",
+  "PAYTABLE_LEGAL": "Payouts are multiplied by stake",
+  "PAYTABLE_MALFUNCTION": "Malfunction voids all plays and pays!",
+  "TOTAL_BET": "Total Bet",
+  "RESTART_MESSAGE": "The server detects that it lost connection from the previous game. It will now resume your previous game",
+  "RTP": "RTP",
+  "JACKPOT": "JP",
+  "RESERVE": "reserve",
+  "JACKPOTKING_WON": "Another player has won the JackpotKing jackpot. New jackpot is ",
+  "REGALPOT_WON": "Another player has won the RegalPot jackpot. New jackpot is ",
+  "ROYALPOT_WON": "Another player has won the RoyalPot jackpot. New jackpot is ",
+  "JACKPOT_WON": "Another player has won the Jackpot.  New jackpot is ",
+  "MEGAWAYS RTP": "Megaways RTP",
+  "BONUS RTP": "Bonus RTP"
+}

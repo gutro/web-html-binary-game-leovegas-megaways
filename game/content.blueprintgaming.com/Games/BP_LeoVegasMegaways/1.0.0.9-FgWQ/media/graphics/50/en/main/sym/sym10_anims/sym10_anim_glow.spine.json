@@ -1,0 +1,322 @@
+{
+"skeleton": { "hash": "zLg25GmV94MZCglNg7sinuDMQ40", "spine": "3.7.91", "width": 483, "height": 628, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "glow_scaler", "parent": "root", "x": 107.5, "y": -180 },
+	{ "name": "sym10_glow1", "parent": "glow_scaler" },
+	{ "name": "sym10_glow2", "parent": "glow_scaler" }
+],
+"slots": [
+	{ "name": "sym10_glow1", "bone": "sym10_glow1", "attachment": "sym10_glow1.jpg", "blend": "additive" },
+	{ "name": "sym10_glow2", "bone": "sym10_glow2", "attachment": "sym10_glow2.jpg", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"sym10_glow1": {
+			"sym10_glow1.jpg": { "x": 0.5, "width": 483, "height": 628 }
+		},
+		"sym10_glow2": {
+			"sym10_glow2.jpg": { "x": 0.5, "width": 369, "height": 618 }
+		}
+	}
+},
+"animations": {
+	"sym10_103": {
+		"slots": {
+			"sym10_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"sym10_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.284, 0, 0.625, 0.38 ]
+					},
+					{
+						"time": 0.0667,
+						"color": "ffffffff",
+						"curve": [ 0.32, 0.29, 0.757, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"sym10_glow1": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"sym10_glow2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "x": 2, "y": 1.5 }
+				]
+			},
+			"glow_scaler": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 127.87 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 0.272 }
+				]
+			}
+		}
+	},
+	"sym10_120": {
+		"slots": {
+			"sym10_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"sym10_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.284, 0, 0.625, 0.38 ]
+					},
+					{
+						"time": 0.0667,
+						"color": "ffffffff",
+						"curve": [ 0.32, 0.29, 0.757, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"sym10_glow1": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"sym10_glow2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "x": 2, "y": 1.5 }
+				]
+			},
+			"glow_scaler": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 120.43 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 0.341 }
+				]
+			}
+		}
+	},
+	"sym10_144": {
+		"slots": {
+			"sym10_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"sym10_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.284, 0, 0.625, 0.38 ]
+					},
+					{
+						"time": 0.0667,
+						"color": "ffffffff",
+						"curve": [ 0.32, 0.29, 0.757, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"sym10_glow1": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"sym10_glow2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "x": 2, "y": 1.5 }
+				]
+			},
+			"glow_scaler": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 107.54 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 0.4 }
+				]
+			}
+		}
+	},
+	"sym10_180": {
+		"slots": {
+			"sym10_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"sym10_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.284, 0, 0.625, 0.38 ]
+					},
+					{
+						"time": 0.0667,
+						"color": "ffffffff",
+						"curve": [ 0.32, 0.29, 0.757, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"sym10_glow1": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"sym10_glow2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "x": 2, "y": 1.5 }
+				]
+			},
+			"glow_scaler": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 89.49 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 0.51 }
+				]
+			}
+		}
+	},
+	"sym10_240": {
+		"slots": {
+			"sym10_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"sym10_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.284, 0, 0.625, 0.38 ]
+					},
+					{
+						"time": 0.0667,
+						"color": "ffffffff",
+						"curve": [ 0.32, 0.29, 0.757, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"sym10_glow1": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"sym10_glow2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "x": 2, "y": 1.5 }
+				]
+			},
+			"glow_scaler": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 55.96 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 0.658 }
+				]
+			}
+		}
+	},
+	"sym10_360": {
+		"slots": {
+			"sym10_glow1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"sym10_glow2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.284, 0, 0.625, 0.38 ]
+					},
+					{
+						"time": 0.0667,
+						"color": "ffffffff",
+						"curve": [ 0.32, 0.29, 0.757, 1 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"sym10_glow1": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"sym10_glow2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "x": 2, "y": 1.5 }
+				]
+			},
+			"glow_scaler": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

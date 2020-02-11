@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>OGS Game</title>
+  <meta name="viewport" content="viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+  <link rel="stylesheet" type="text/css" href="css/launcher.css" />
+  <script type="text/javascript" src="js/dist/gcmLauncher.min.js"></script>
+  <script type="text/javascript" src="config/gcmConfig.js"></script>
+</head>
+
+<body onLoad="gcm.launcher.init()">
+  <iframe name="commonUIFrame" id="commonUIIFrame" scrolling="no" class="commonUI" frameborder="0" allow="geolocation"></iframe>
+  <iframe name="gameFrame" id="gameIFrame" scrolling="no " class="game" frameborder="0"></iframe>
+  <iframe name="footerFrame" id="footerIFrame" scrolling="no" class="footer" frameborder="0"></iframe>
+</body>
+
+</html>

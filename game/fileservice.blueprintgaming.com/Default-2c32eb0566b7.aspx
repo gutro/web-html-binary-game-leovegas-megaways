@@ -1,0 +1,1 @@
+No Content: https://fileservice.blueprintgaming.com/Default.aspx?fileType=config&customer=NYX_MALTA&affiliate=NYX_MALTA&platform=Mobile&clientFolder=BP_LeoVegasMegaways&serverType=live&bp_jurisdiction=SE&cachebuster=2dd2e946-c5b0-47bc-80a3-bd0352812f40

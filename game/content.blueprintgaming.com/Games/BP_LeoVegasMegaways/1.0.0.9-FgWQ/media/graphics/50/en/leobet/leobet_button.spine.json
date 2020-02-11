@@ -1,0 +1,147 @@
+{
+"skeleton": { "hash": "1n8x2iwEAfoV9nuP2jOYUqTCwNg", "spine": "3.7.91", "width": 336, "height": 443, "images": "", "audio": "D:/Work/ART663_LeoVegas_Megaways_HTML/spine/leobet" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "leo_bet_ticket", "parent": "root", "x": 150, "y": -377.5 }
+],
+"slots": [
+	{ "name": "leo_bet_ticket", "bone": "leo_bet_ticket", "attachment": "leo_bet_ticket_ml" },
+	{ "name": "leo_bet_ticket_glow", "bone": "leo_bet_ticket", "attachment": "leo_bet_ticket_glow", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"leo_bet_ticket": {
+			"leo_bet_ticket_ml": { "y": -5, "width": 234, "height": 313 }
+		},
+		"leo_bet_ticket_glow": {
+			"leo_bet_ticket_glow": { "x": 18, "width": 336, "height": 443 }
+		}
+	}
+},
+"animations": {
+	"leobet_bonus_picked": {
+		"slots": {
+			"leo_bet_ticket_glow": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"leo_bet_ticket": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"leobet_intro": {
+		"slots": {
+			"leo_bet_ticket_glow": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"leo_bet_ticket": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1,
+						"x": 0.95,
+						"y": 0.95,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"leobet_loop": {
+		"slots": {
+			"leo_bet_ticket_glow": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"leo_bet_ticket": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"leobet_megaways_picked": {
+		"slots": {
+			"leo_bet_ticket_glow": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"leo_bet_ticket": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"leobet_pressed": {
+		"slots": {
+			"leo_bet_ticket_glow": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"leo_bet_ticket": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1,
+						"x": 0.95,
+						"y": 0.95,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}
